@@ -2,7 +2,7 @@ import React from "react";
 
 //
 import { Layout, Typography } from "antd";
-const { Header } = Layout;
+const { Header, Content } = Layout;
 const { Title } = Typography;
 
 const AppLayout: React.FC = ({ children }) => {
@@ -14,7 +14,7 @@ const AppLayout: React.FC = ({ children }) => {
             Expense Tracker
           </Title>
         </Header>
-        {children}
+        <Content className="body-section">{children}</Content>
       </Layout>
     </>
   );

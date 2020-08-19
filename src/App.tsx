@@ -2,18 +2,20 @@ import React from "react";
 import "./App.css";
 
 import AppLayout from "./components/AppLayout";
+import ExpenseForm from "./components/ExpenseForm";
+import Balance from "./components/Balance";
 
 import { Row, Col } from "antd";
 
 function App() {
   return (
     <AppLayout>
-      <Row justify="center" align="middle" style={{ height: "90vh" }}>
-        <Col span={12}>
-          <h1>App Component</h1>
+      <Row justify="center" align="top" style={{ height: "100vh" }}>
+        <Col span={9}>
+          <ExpenseForm />
         </Col>
-        <Col span={12}>
-          <h1>App Component</h1>
+        <Col span={9}>
+          <Balance />
         </Col>
       </Row>
     </AppLayout>

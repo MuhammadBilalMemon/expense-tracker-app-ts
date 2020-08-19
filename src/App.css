@@ -2,5 +2,9 @@
 
 .header {
     color: #8c8c8c;
-    background-color: #fff7e6;
+    background-color: #d3f261;
+}
+
+.body-section {
+    background-color: #f4ffb8;
 }
